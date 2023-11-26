@@ -4,7 +4,7 @@ La fonction chiffrement_cesar prend une chaîne de caractères (texte) et un dé
 
 ### Chiffrement
 
-python
+```python
 def chiffrement_cesar(texte, decalage):
     result = ""
     for caractere in texte:
@@ -14,6 +14,7 @@ def chiffrement_cesar(texte, decalage):
         else:
             result += caractere
     return result
+```
 
 - La boucle for itère à travers chaque caractère de la chaîne texte.
 - La condition if caractere.isalpha(): vérifie si le caractère est une lettre alphabétique.
@@ -24,10 +25,10 @@ Fonction de Déchiffrement César
 
 ### Déchiffrement
 
-python
+```python
 def dechiffrement_cesar(texte, decalage):
     return chiffrement_cesar(texte, -decalage)
-
+```
 
 - La fonction dechiffrement_cesar déchiffre un texte chiffré en utilisant la même logique que la fonction de chiffrement, mais avec un décalage négatif.
 
@@ -36,7 +37,7 @@ def dechiffrement_cesar(texte, decalage):
 
 L'exemple d'utilisation des deux fonctions est illustré ci-dessous :
 
-python
+```python
 texte = input("Ecrivez le texte à crypter : ")
 decalage = input("Ecrivez le nombre de décalage : ")
 texte_chiffre = chiffrement_cesar(texte, int(decalage))
@@ -45,6 +46,6 @@ texte_dechiffre = dechiffrement_cesar(texte_chiffre, int(decalage))
 print("Texte original : ", texte)
 print("Texte chiffré : ", texte_chiffre)
 print("Texte déchiffré : ", texte_dechiffre)
-
+```
 
 En utilisant cet exemple, l'utilisateur peut voir comment le texte est chiffré et déchiffré à l'aide du chiffrement César avec le décalage spécifié.
