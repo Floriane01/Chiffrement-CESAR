@@ -21,7 +21,6 @@ def chiffrement_cesar(texte, decalage):
 - La variable code_ascii est définie en fonction de la casse du caractère, pour normaliser le code ASCII.
 - La formule `(ord(caractere) - code_ascii + decalage) % 26 + code_ascii` calcule la nouvelle position de la lettre après le décalage, en tenant compte du rebouclage à travers l''alphabet.
 - Les caractères non alphabétiques restent inchangés.
-Fonction de Déchiffrement César
 
 ### Déchiffrement
 
